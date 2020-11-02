@@ -83,7 +83,7 @@ def getUserJson(userInfo,token):
             "text": userInfo['classDescription']
         },
         #如果你来自其他学校，请自行打卡抓包修改地址字段
-        "areaStr": "{"streetNumber":"","street":"云峰路","district":"南海区","city":"佛山市","province":"广东省","town":"","pois":"广东环境保护工程职业学院","lng":112.91641200000286,"lat":23.05289300971782,"address":"南海区云峰路广东环境保护工程职业学院","text":"广东省-佛山市","code":""}",
+        "areaStr": {"streetNumber":"","street":"云峰路","district":"南海区","city":"佛山市","province":"广东省","town":"","pois":"广东环境保护工程职业学院","lng":112.91641200000286,"lat":23.05289300971782,"address":"南海区云峰路广东环境保护工程职业学院","text":"广东省-佛山市","code":""},
         "reportdate": round(time.time()*1000),
         "customerid": userInfo['customerId'],
         "deptid": userInfo['classId'],

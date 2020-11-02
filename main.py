@@ -88,9 +88,10 @@ def getUserJson(userInfo,token):
         "customerid": userInfo['customerId'],
         "deptid": userInfo['classId'],
         "source": "app",
-        "templateid": "clockSign2",
+        "templateid": "pneumoniaOut",
         "stuNo": userInfo['stuNo'],
         "username": userInfo['username'],
+        "phonenum": phone,
         "userid": round(time.time()),
         "updatainfo": [  
            {
@@ -99,7 +100,7 @@ def getUserJson(userInfo,token):
       },
       {
         "propertyname": "temperature",
-        "value": "36.4"
+        "value": "temperature"
       },
       {
         "propertyname": "symptom",
@@ -122,10 +123,7 @@ def getUserJson(userInfo,token):
         "value": ""
       }
         ],
-        "customerAppTypeRuleId": 147,
-        "clockState": 0,
-        "token": token
-        },
+        "gpsType": 1,
         "token": token
     }    
 

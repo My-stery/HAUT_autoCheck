@@ -83,7 +83,7 @@ def getUserJson(userInfo,token):
             "text": userInfo['classDescription']
         },
         #如果你来自其他学校，请自行打卡抓包修改地址字段
-        "areaStr": {"streetNumber":"","street":"长椿路辅路","district":"中原区","city":"郑州市","province":"河南省","town":"","pois":"河南工业大学(莲花街校区)","lng":113.55064699999795 + random.random()/1000,"lat":34.83870696238093 + random.random()/1000,"address":"中原区长椿路辅路河南工业大学(莲花街校区)","text":"河南省-郑州市","code":""},
+        "areaStr": "{"streetNumber":"","street":"云峰路","district":"南海区","city":"佛山市","province":"广东省","town":"","pois":"广东环境保护工程职业学院","lng":112.91641200000286,"lat":23.05289300971782,"address":"南海区云峰路广东环境保护工程职业学院","text":"广东省-佛山市","code":""}",
         "reportdate": round(time.time()*1000),
         "customerid": userInfo['customerId'],
         "deptid": userInfo['classId'],
@@ -93,14 +93,34 @@ def getUserJson(userInfo,token):
         "username": userInfo['username'],
         "userid": round(time.time()),
         "updatainfo": [  
-            {
-                "propertyname": "temperature",
-                "value": temperature
-            },
-            {
-                "propertyname": "symptom",
-                "value": "无症状"
-            }
+           {
+        "propertyname": "sex",
+        "value": "男"
+      },
+      {
+        "propertyname": "temperature",
+        "value": "36.4"
+      },
+      {
+        "propertyname": "symptom",
+        "value": "A.正常，无症状"
+      },
+      {
+        "propertyname": "sxname",
+        "value": "广东环境保护工程职业学院"
+      },
+      {
+        "propertyname": "xinqing",
+        "value": "A.健康"
+      },
+      {
+        "propertyname": "sxss",
+        "value": "无"
+      },
+      {
+        "propertyname": "assistRemark",
+        "value": ""
+      }
         ],
         "customerAppTypeRuleId": 147,
         "clockState": 0,

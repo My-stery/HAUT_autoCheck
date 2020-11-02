@@ -76,7 +76,7 @@ def getUserJson(userInfo,token):
     temperature = round(a, 1)
     return  {
         "businessType": "epmpics",
-        "method": "submitUpInfoSchool",
+        "method": "submitUpInfo",
         "jsonData": {
         "deptStr": {
             "deptid": userInfo['classId'],
@@ -91,7 +91,7 @@ def getUserJson(userInfo,token):
         "templateid": "pneumoniaOut",
         "stuNo": userInfo['stuNo'],
         "username": userInfo['username'],
-        "phonenum": phone,
+        "phonenum": "phone",
         "userid": round(time.time()),
         "updatainfo": [  
            {

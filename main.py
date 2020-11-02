@@ -126,7 +126,7 @@ def getUserJson(userInfo,token):
         "gpsType": 1,
         "token": token
     }    
-
+  }
 #信息获取函数
 def getUserInfo(token):
     token={'token':token}

@@ -43,7 +43,7 @@ def main():
                 else:
                     failure.append(value[-4:])
                     print(response.text)
-                    msg = strTime + value[-4:] + "打卡异常"
+                    msg = strTime + value[-4:] + "打卡异常哦"
                     count = count + 1
                     if index == 0:
                         result = response

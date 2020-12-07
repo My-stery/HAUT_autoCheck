@@ -80,8 +80,8 @@ def getNowTime():
 
 
 def getUserJson(userInfo, token, phone):
-    # 随机温度(36.2~36.8)
-    a = random.uniform(36.2, 36.8)
+    # 随机温度(36.2~36.6)
+    a = random.uniform(36.2, 36.6)
     temperature = round(a, 1)
     return {
         "businessType": "epmpics",
